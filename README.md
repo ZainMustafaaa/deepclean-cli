@@ -2,6 +2,8 @@
 
 Scan a directory tree and delete matching folders (e.g. `node_modules`) up to a configurable depth — reclaim disk space without hunting through every project by hand.
 
+![cleanup-cli demo](docs/demo.gif)
+
 ## Features
 
 - 🔍 Recursively scans a directory tree up to a max depth
