@@ -1,0 +1,26 @@
+{
+  "name": "cleanup-cli",
+  "version": "1.0.0",
+  "description": "Scan a directory tree and delete matching folders (e.g. node_modules) up to a configurable depth.",
+  "main": "lib/scanner.js",
+  "bin": {
+    "cleanup": "bin/cleanup.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "cli",
+    "node_modules",
+    "cleanup",
+    "disk-space"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "commander": "^14.0.1"
+  }
+}
