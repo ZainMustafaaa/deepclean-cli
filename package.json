@@ -12,9 +12,24 @@
   ],
   "keywords": [
     "cli",
+    "node-modules",
     "node_modules",
     "cleanup",
-    "disk-space"
+    "clean",
+    "disk-space",
+    "disk-cleanup",
+    "free-disk-space",
+    "delete-node-modules",
+    "remove-node-modules",
+    "prune",
+    "monorepo",
+    "dev-tools",
+    "developer-tools",
+    "storage",
+    "command-line",
+    "npm-cleanup",
+    "folder-cleanup",
+    "directory-scanner"
   ],
   "license": "MIT",
   "author": {
