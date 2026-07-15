@@ -2,7 +2,7 @@
 
 Scan a directory tree and delete matching folders (e.g. `node_modules`) up to a configurable depth — reclaim disk space without hunting through every project by hand.
 
-![deepclean-cli demo](docs/demo.gif)
+![deepclean-cli demo](docs/demo-usage.gif)
 
 ## Features
 
