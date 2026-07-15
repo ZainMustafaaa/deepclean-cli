@@ -1,10 +1,10 @@
 {
-  "name": "cleanup-cli",
+  "name": "deepclean-cli",
   "version": "1.0.0",
   "description": "Scan a directory tree and delete matching folders (e.g. node_modules) up to a configurable depth.",
   "main": "lib/scanner.js",
   "bin": {
-    "cleanup": "bin/cleanup.js"
+    "deepclean": "bin/cleanup.js"
   },
   "files": [
     "bin",

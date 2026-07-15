@@ -1,8 +1,8 @@
-# cleanup-cli
+# deepclean-cli
 
 Scan a directory tree and delete matching folders (e.g. `node_modules`) up to a configurable depth — reclaim disk space without hunting through every project by hand.
 
-![cleanup-cli demo](docs/demo.gif)
+![deepclean-cli demo](docs/demo.gif)
 
 ## Features
 
@@ -15,22 +15,22 @@ Scan a directory tree and delete matching folders (e.g. `node_modules`) up to a 
 
 ## Installation
 
-Install globally to use the `cleanup` command anywhere:
+Install globally to use the `deepclean` command anywhere:
 
 ```bash
-npm install -g cleanup-cli
+npm install -g deepclean-cli
 ```
 
 Or run it without installing, via `npx`:
 
 ```bash
-npx cleanup-cli -d ./my-projects
+npx deepclean-cli -d ./my-projects
 ```
 
 ## Usage
 
 ```bash
-cleanup -d <path> [options]
+deepclean -d <path> [options]
 ```
 
 `-d, --dir <path>` is required — it's the root directory to scan.
@@ -40,25 +40,25 @@ cleanup -d <path> [options]
 Preview all `node_modules` folders up to 3 levels deep (no deletion):
 
 ```bash
-cleanup -d ~/code --dry-run
+deepclean -d ~/code --dry-run
 ```
 
 Delete them, with a confirmation prompt:
 
 ```bash
-cleanup -d ~/code
+deepclean -d ~/code
 ```
 
 Skip the confirmation prompt (useful in scripts):
 
 ```bash
-cleanup -d ~/code -y
+deepclean -d ~/code -y
 ```
 
 Clean up a different folder, e.g. `dist` build output, scanning deeper:
 
 ```bash
-cleanup -d ~/code -t dist -l 5
+deepclean -d ~/code -t dist -l 5
 ```
 
 ## Options
@@ -75,12 +75,12 @@ cleanup -d ~/code -t dist -l 5
 
 ## How it works
 
-1. `cleanup` always runs a dry-run pass first, printing every match it finds along with its size and a running total.
+1. `deepclean` always runs a dry-run pass first, printing every match it finds along with its size and a running total.
 2. If no matches are found, it exits — nothing else happens.
 3. If `--dry-run` was passed, it stops here.
 4. Otherwise, it asks for confirmation (unless `-y` was passed), then deletes each matched folder and reports how much space was freed.
 
-Matched folders are never scanned recursively — once `cleanup` finds a `node_modules` (or whatever `--target-dir` you set), it stops descending into it.
+Matched folders are never scanned recursively — once `deepclean` finds a `node_modules` (or whatever `--target-dir` you set), it stops descending into it.
 
 ## Safety notes
 

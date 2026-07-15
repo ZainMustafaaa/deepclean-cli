@@ -8,7 +8,7 @@ const { run, formatBytes } = require('../lib/scanner');
 const program = new Command();
 
 program
-  .name('cleanup')
+  .name('deepclean')
   .description('Scan a directory tree and delete matching folders (e.g. node_modules)')
   .version('1.0.0')
   .requiredOption('-d, --dir <path>', 'root directory to scan')
