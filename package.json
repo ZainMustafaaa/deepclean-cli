@@ -1,6 +1,6 @@
 {
   "name": "deepclean-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scan a directory tree and delete matching folders (e.g. node_modules) up to a configurable depth.",
   "main": "lib/scanner.js",
   "bin": {
@@ -17,6 +17,10 @@
     "disk-space"
   ],
   "license": "MIT",
+  "author": {
+    "name": "Zain Mustafa",
+    "url": "https://github.com/ZainMustafaaa"
+  },
   "engines": {
     "node": ">=14"
   },
